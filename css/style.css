@@ -1,0 +1,1019 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+
+}
+body{
+    height:fit-content;
+    height: 9000px;
+    display: flex;
+    flex-direction: column;
+   
+   
+    width :100%;
+}
+.section1 {
+   
+position: relative;
+
+
+
+background-size: cover; /* Ensure the image covers the entire background */
+background-position: center; /* Center the image */
+
+background-repeat: no-repeat; /* Avoid repeating the image */
+
+}
+
+.section1_overlay {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    
+    top: 0;
+    left: 0;
+    background-color: rgba(0 ,0,0,0.6);
+}
+.content {
+    width: 40%;
+    position: absolute;
+    top: 39%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sec1title{
+    color:burlywood;
+    font-size: 55px;
+    text-transform: uppercase;
+
+}
+.tit2{
+    color: antiquewhite;
+    font-size: 30 px;
+    display: block;
+}
+
+
+.p1{
+    display: block;
+    color: blanchedalmond;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+.btn1sec1{
+width: 145px;
+height: 40px;
+border: 0;
+border-radius: 9px;
+font-size: 17px;
+text-transform: capitalize;
+cursor: pointer;
+margin-top: 3px;
+padding: 10px;
+
+}
+.h{
+    margin-right: 10px;
+
+}
+.btn1sec1:hover{
+    opacity: 0.5;
+}
+.header {
+    position: fixed; /* Keeps the header at the top of the viewport */
+    top: 0; /* Aligns the header to the top */
+    left: 0;
+    width: 100%; /* Makes the header span the full width of the page */
+    z-index: 1000; /* Ensures the header stays above other content */
+    background-color:rgba(255, 223, 134, 0.486); /* Semi-transparent background for styling */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Adds spacing inside the header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    
+}
+.logo{
+    color:beige;
+    z-index: 2000;
+    font-size: 45px;
+    line-height: 50px;
+    margin-top: -10px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Adds space between navigation items */
+    margin-left: 1150px;
+    margin-top: -36px;
+    padding: 0;
+}
+.nav-list li {
+    display: inline;
+    color: aliceblue;
+
+    
+
+}
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nav-list a:hover {
+    text-decoration: underline;
+}
+.text{
+    display: flex;
+    align-items: center; /* Vertically centers the text box next to the logo */
+    gap: 10px; /* Adds space between the logo and the text box */
+}
+input[type="text"]{
+  
+    height: 30px; /* Adjust the height of the text box */
+    border: 1px solid #ccc; /* Border with light gray color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Inner spacing */
+    font-size: 16px; /* Text size inside the box */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for styling */
+    margin-left: 70px;
+    margin-top: -50px;
+}
+
+
+.welcome{
+    font-size: 40px;
+    margin-left: 20%;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top:50px;
+    
+
+    
+}
+.wline{
+width: 30%; /* Adjust width as needed */
+    height: 5px; /* Controls the thickness of the line */
+    background-color: rgb(181, 127, 62); /* Line color */
+    margin: 20px auto; /* Center the line and add spacing */
+    border-radius: 5px; /* Optional: Rounded edges */
+}
+.containerwelcome{
+    width: 80%;
+    margin:auto ;
+    margin-top: 150px;
+}
+.welcomeitem{
+    float: left;
+    width: 30%;
+    padding: 14px 18px;
+    text-align: center;
+    background-color:rgb(211, 221, 197);
+    border: 3px;
+    border-radius: 6px;
+    border-color: cadetblue;
+    
+
+}
+.oo{
+    margin: 0px 5%;
+}
+.welcomeitemicon{
+    font-size: 50px;
+    color: bisque;
+}
+.welcomeitemheader{
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top:20px;
+
+}
+.welcomepragraph{
+    margin-top: 20px;
+    text-transform: uppercase;
+    
+
+}
+.pwelcome{
+    color: gray;
+}
+.p2welcom{
+    margin-top: 30px; 
+}
+.pp{
+   
+    text-transform: uppercase;
+    color: bisque;
+    text-decoration: none;
+}
+.welcomeitem:hover {
+   background-color:rgb(72, 92, 38); 
+}
+.welcomeitem:hover .welcomeitemheader{
+    color: antiquewhite;
+}
+.welcomeitem:hover  .pwelcome{
+    color: black;
+}
+
+.containerfeature {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+    width: 80%;
+    margin:auto ;
+    height: 100vh;
+    margin-top: 30px;
+}
+.section2{
+    padding: 20px; 
+    margin-bottom: 500px; 
+   
+}
+.section3{
+    width: 100%;
+    background-color:rgb(255, 246, 232);
+}
+.featurecontent {
+    flex: 1 1 calc(33.33% - 20px); /* 3 items per row with 20px gap */
+    box-sizing: border-box;
+}
+.feature{
+    font-size: 37px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 80px; 
+    
+}
+.textfeature{
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+.fline{
+    width: 30%; /* Adjust width as needed */
+        height: 5px; /* Controls the thickness of the line */
+        background-color: rgb(181, 127, 62); /* Line color */
+        margin: 5px auto; /* Center the line and add spacing */
+        border-radius: 5px; /* Optional: Rounded edges */
+        margin-top: -40px;
+    }
+.featureimg{
+    position: relative;
+    overflow: hidden; /* Prevent overlay content from spilling out */
+    width: 255px;
+    height: 255px;
+}
+.featureoverlay{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    
+    top: 0;
+    left: 0;
+    background-color: rgba(0 ,0,0,0.5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; 
+
+}
+.featureimg:hover .featureoverlay {
+    opacity: 1; /* Show overlay on hover */
+    visibility: visible; /* Make content visible and interactive */
+}
+
+   
+.featcureicons {
+    margin: 5px; 
+   
+    font-size: 20px;
+    text-align: center;
+
+    margin-top: 20px;
+   
+}
+.ifeature{
+    color: rgb(255, 255, 255);
+}
+ .categorydiscfeature {
+    text-align: center; 
+    color: rgb(244, 246, 212);
+    font-size: 10px;
+    margin-top: 10px;
+ }
+ .categoryfeature{
+    text-align: center; 
+    color: rgb(157, 206, 174);
+    font-size: 20px;
+    margin-top: 31px;
+ }
+ .containeroffer{
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adjust vertical spacing between rows */
+ }
+
+.offerelement{
+    width: calc(33.33% - 20px); /* Ensures three elements fit per row with gap */
+    padding: 18px 22px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(116, 83, 70);
+    border-radius: 8px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px; /* Space between rows */
+    
+    display: flex;
+    flex-direction: column; /* Makes content stack vertically */
+    justify-content: space-between; /* Distributes space evenly within the element */
+   
+}
+.offertopic {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Space below the topic */
+    
+}
+.offerdisc {
+    font-size: 14px;
+    color: grey; /* Softer color for readability */
+}
+.offerlogo {
+    font-size: 40px; /* Adjust icon size */
+    color: rgb(136, 185, 153);
+    margin-bottom: 10px; /* Adds space below the icon */
+    
+    
+}
+.offertext {
+    width: 100%; /* Makes the header span the full width of the container */
+    text-align: center; /* Centers the text horizontally */
+    margin-bottom: 35px; /* Adds space below the header */
+    margin-top: -20px;
+}
+.otext{
+    font-size: 35px; /* Adjusts the font size of the header */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #121111; /* Ensures the text stands out */
+}
+.offerelement:hover .offertopic {
+    color: rgb(91, 59, 15);
+    border-radius: 5px; /* Softens the background edges */
+    padding: 5px; /* Adds space inside the hover background */
+
+}
+.offerelement:hover .offerdisc {
+    color: black;
+   
+}
+.layoutofferelem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(253, 233, 195, 0.3); /* Semi-transparent overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+.offerelement:hover .layoutofferelem {
+    opacity: 1; /* Overlay becomes visible on hover */
+}
+
+.choosecontainer {
+    display: flex; /* Use Flexbox to arrange items horizontally */
+    justify-content: space-between; /* Creates space between the text and image */
+    align-items: center; /* Vertically aligns items in the center */
+    margin-top: 190px; /* Adds some space from the top */
+    align-items: flex-start; /* Aligns items at the top of the container */
+}
+.choosetext {
+    flex: 1; /* Makes the text container take up the remaining space */
+    margin-right: 20px; /* Adds spacing between the text and image */
+    display: inline;
+}
+
+
+.chooseheader{
+    font-size: 35px; /* Adjusts the font size of the header */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 90px;
+}
+.choosep1{
+    font-size: 10px; /* Adjusts the font size of the header */
+    
+    text-transform: uppercase;
+    margin-left: 60px;
+    color: gray;
+    margin-bottom: 20px; 
+}
+.choosep11{
+    font-size: 18px; /* Adjusts the font size of the header */
+  
+    text-transform: uppercase;
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+.chooseicon{
+   color: burlywood;
+   margin-right: 10px;
+}
+.chooseimg{
+   display: inline;
+   margin-right: 90px;
+}
+input[type="radio"] {
+    width: 20px; /* Change the size */
+    height: 20px; /* Change the size */
+    border: 2px solid #e2d481; /* Border color */
+    border-radius: 50%; /* Make it circular */
+    appearance: none; /* Remove the default appearance in some browsers */
+    background-color: #fff; /* Background color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+.choosebullets{
+    margin-left: 200px;
+}
+
+.section6 {
+    background-image: url(../images/books-beverage-leaves.jpg);/* Replace with your actual background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 170px;
+    color: #fff;
+  }
+  
+  .overlayiconss {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .containericonss {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1000px;
+  }
+  
+  .iconss {
+    text-align: center;
+    color: #ffefb7; /* Soft purple color */
+    
+  }
+  
+  .iconss .qq {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .iconss h3 {
+    font-size: 24px;
+    margin: 5px 0;
+  }
+  
+  .iconss p {
+    font-size: 16px;
+    margin: 0;
+  }
+  .section7{
+    background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  }
+  h1 {
+    font-size: 28px;
+    text-transform: lowercase;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: #333;
+  }
+  
+  /* Pricing Table */
+  .pricing-table {
+    text-align: center;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #fefbd8;
+    border: 1px solid #7a9575;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 15px;
+    width: 280px;
+    text-align: center;
+    position: relative; /* Added for overlay positioning */
+    overflow: hidden; 
+  }
+  
+  
+  .card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #444;
+  }
+  
+ .cardprice .price {
+    display: inline-block;
+  padding: 10px 20px; /* Adjust padding for word fit */
+  border: 2px solid #769771; /* Border thickness and color */
+  color: #1b1b1b; /* Text color matches border */
+  border-radius: 50%; /* Makes it a circle */
+  text-align: center; /* Aligns text horizontally */
+  font-size: 20px; /* Adjust font size for readability */
+  font-weight: bold;
+   
+  }
+  .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 110, 83, 0.3); /* Dark semi-transparent overlay */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    z-index: 1; /* Places it above content but below the button */
+    
+}
+.card:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+    color: #f8f6e3;
+}
+  
+ .cardprice span {
+    font-size: 14px;
+  color: #777;
+  }
+  
+  .card ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+  }
+  
+  .card ul li {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+  }
+  .card ul li:hover .overlay{
+    color: #f8f6e3;
+  }
+
+  
+  .card button {
+    position: relative; /* Makes the button stack above the overlay */
+    z-index: 2; /* Places button on top of the overlay */
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+   
+  }
+  
+  .card button:hover {
+    background-color: #333;
+    color: white;
+  }
+  .card button:hover .overlay{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .cardprice{
+    font-size: 16px;
+  margin: 15px 0;
+  font-weight: bold;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+    
+
+  }
+  .section8{
+    background-image: url(../images/books-beverage-leaves.jpg);/* Replace with your actual background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 170px;
+    color: #fff;
+  }
+  .overlayemployee{
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.containeremloyee{
+
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1000px;
+}
+.eployeepers1{
+    text-align: center;
+    color: #ffefb7;
+    margin-right: 25px;
+}
+.person1img{
+    display: flex;
+    align-items: center; /* Aligns items vertically (image and text) */
+    gap: 15px; /* Space between the image and text */
+}
+ .imgemployee img{
+    border-radius: 50%; /* Makes the image round */
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+    
+    
+}
+.pragraphanspan h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:rgb(227, 186, 133);
+    text-transform: uppercase;
+}
+.pragraphanspan h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:antiquewhite;
+    text-transform: uppercase;
+}
+.pragraphanspan{
+    display: flex;
+    flex-direction: column; /* Stack the name and title vertically */
+}
+.pragraf2emloyee{
+    font-size: 16px;
+    margin: 0;
+    color: antiquewhite;
+    font-weight: bold;
+    text-transform:capitalize;
+
+}
+.ourteamtopic{
+    font-size: 40px;
+    margin-left:42%;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top:50px;
+    
+
+    
+}
+.ourteamline{
+    width: 30%; /* Adjust width as needed */
+        height: 5px; /* Controls the thickness of the line */
+        background-color: rgb(181, 127, 62); /* Line color */
+        margin: 20px auto; /* Center the line and add spacing */
+        border-radius: 5px; /* Optional: Rounded edges */
+}
+.containerourteam{
+    width: 80%;
+    margin:auto ;
+    margin-top: 150px;
+}
+.memberofteam{
+    position: relative;
+    float: left;
+    width: 30%;
+    padding: 14px 18px;
+    text-align: center;
+    background-color:rgb(217, 222, 198);
+    border: 3px;
+    border-radius: 6px;
+    border-color: rgb(144, 153, 105);
+    overflow: hidden;
+    height: 400px;
+    
+
+}
+.gg{
+    margin: 0px 5%;
+}
+.imgofmember{
+    width:90%;
+    margin: auto;
+    position: relative;
+    height: auto;
+    height: 80%;
+}
+.imgofmember img{
+    width: 100%;
+    display: block;
+    height:80% ;
+   
+}
+.namememberofteam h2{
+    color: black;
+    margin-top: 10px;
+}
+.titlememberofteam h3{
+    color: grey;
+    margin-top: 10px;
+}
+.overlaymmber{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    
+    top: 0;
+    right:0 ;
+    justify-content: center;
+    display: flex;
+    padding: 35px;
+
+    
+    flex-direction: column; /* Stack icons vertically */
+  justify-content: center; /* Center icons vertically */
+  align-items: flex-end; /* Align icons to the far right */
+    
+    background-color: rgba(255, 238, 208, 0.3);
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; 
+    margin-bottom: auto;
+
+
+}
+.overlaymmber a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 23px;
+    margin-left: auto;
+    
+
+}
+.overlaymmber a i {
+    line-height: 40px;
+}
+.memberofteam:hover .overlaymmber{
+    opacity: 1; /* Show overlay on hover */
+    visibility: visible; /* Make content visible and interactive */
+}
+.memberofteam:hover .namememberofteam h2
+{
+  color: #fffdf8; /* Change to a new color (e.g., blue) */
+  margin: 10px 0;
+}
+.memberofteam:hover .titlememberofteam h3 {
+    color: rgb(93, 76, 55);
+    margin: 10px 0;
+}
+.recentnewstopic{
+    font-size: 40px;
+    margin-left:40%;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top:50px;
+    
+
+    
+}
+.recentnewsline{
+    width: 30%; /* Adjust width as needed */
+        height: 5px; /* Controls the thickness of the line */
+        background-color: rgb(181, 127, 62); /* Line color */
+        margin: 20px auto; /* Center the line and add spacing */
+        border-radius: 5px; /* Optional: Rounded edges */
+}
+.section10{
+    margin-bottom: 300px;
+    flex-grow: 1; 
+}
+.containerresentnews{
+    width: 80%;
+    margin:auto ;
+    
+    
+}
+.containerresentnews::after {
+    content: "";
+    display: block;
+    clear: both; /* Clear floated children */
+}
+.memberofresentnews{
+    position: relative;
+    float: left;
+    width: 30%;
+    padding: 14px 18px;
+    text-align: center;
+    background-color:rgb(244, 242, 227);
+    border: 3px;
+    border-radius: 10px;
+    border-color: rgb(144, 153, 105);
+   
+    height: 570px;
+    
+
+}
+.vv{
+    margin: 0px 5%;
+}
+.imgofresent{
+    width:80%;
+    margin: auto;
+    position: relative;
+    
+    height: 80%;
+}
+.imgofresent img{
+    width: 100%;
+    display: block;
+    height:70% ;
+    border-radius: 10px;
+   
+}
+.overlayrecent{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right:0 ;
+    justify-content: center;
+    display: flex;
+    padding: 35px;
+    background-color:rgba(92, 64, 10, 0.2); 
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; 
+    margin-bottom: auto;
+
+
+}
+.iconrecentnews .faceahmed , .iconrecentnews .twitterahmed , .iconrecentnews .linkedinahmed {
+    display: inline;
+    font-size: larger;
+    
+}
+.iconrecentnews .faceahmed i, .iconrecentnews .twitterahmed i , .iconrecentnews .linkedinahmed i{
+    color: rgb(250, 206, 153);
+}
+
+.iconrecentnews{
+    margin-top: -80px;
+    margin-bottom: 13px;
+}
+.titlememberrecentnews  {
+    margin-bottom: 18px;
+}
+.pragraphahmed{
+    margin-bottom: 20px;
+    
+}
+.pragraphahmed p{
+    color: grey;
+}
+.readmoreahmed .dd{
+    text-transform: capitalize;
+    color: rgb(250, 209, 160);
+    text-decoration: none;
+}
+.resentnews{
+    margin-top: 170px;
+    padding: 100px;
+}
+.memberofresentnews:hover .overlayrecent{
+    opacity: 1; /* Show overlay on hover */
+    visibility: visible; /* Make content visible and interactive */
+}
+.memberofresentnews:hover .titlememberrecentnews h2{
+    color: #ffffff;
+    
+}
+.footer {
+   
+    width: 100%;
+    background-color: rgba(255, 223, 134); /* Footer background */
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: auto; /* Push footer to the bottom */
+    
+
+
+    
+}
+.containerfooter {
+    display: flex;
+    flex-direction: column; /* Stacks content vertically inside the footer */
+    align-items: center; /* Centers content horizontally */
+    text-align: center;
+    width: 100%; /* Ensures the footer content spans the full width */
+    
+    
+}
+
+.logosfooter{
+    display: flex;
+    justify-content: center; /* Centers the icons horizontally */
+    gap: 15px; /* Adds space between icons */
+    margin: 20px 0; /* Adds space around the icons */
+    font-size: 40px; /* Adjusts icon size */
+    color: beige; /* Matches your color preference */
+    
+}
+.imgfooter{
+    width: 100%; /* Adjust image to take the full width of its container */
+    max-width: 200px; /* Limits the max width of the image */
+    margin: 10px 0; /* Adds spacing around the image */
+    
+    
+    height: 60%;
+}
+.imgfooter img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Smooth corners */
+    display: block; /* Removes inline gaps */
+   
+}
+.pragrafooter {
+    color: #000; /* Keeps text readable on your background */
+    font-size: 14px; /* Adjust font size for better readability */
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
